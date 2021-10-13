@@ -34,3 +34,4 @@ EXPOSE 3838
 # run entrypoint
 CMD ["R", "-e", "shiny::runApp('/root/app',  host = '0.0.0.0', port = 3838)"]
 
+
