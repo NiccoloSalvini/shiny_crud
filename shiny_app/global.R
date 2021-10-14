@@ -33,5 +33,5 @@ shiny::onStop(function() {
 # Turn off scientific notation
 options(scipen = 999)
 
-# Set spinner type (for loading) (set waiter spinner)
+# Set spinner type (for loading)
 options(spinner.type = 8)
