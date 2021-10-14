@@ -6,7 +6,7 @@ library(readxl, quietly = T ,warn.conflicts = F)
 library(janitor, quietly = T ,warn.conflicts = F)
 library(forcats, quietly = T ,warn.conflicts = F)
 
-yssup <- read_excel(here("04_yssup_trackings", "data_prep", "provided","yssup_data.xlsx")) %>%
+yssup <- read_excel(here("data_prep", "provided","yssup_data.xlsx")) %>%
   clean_names() %>%
   rename(tipette = x1) %>%
   mutate(
@@ -17,5 +17,5 @@ yssup <- read_excel(here("04_yssup_trackings", "data_prep", "provided","yssup_da
   )
 
 
-saveRDS(yssup, file = '04_yssup_trackings/data_prep/prepped/yssup.RDS')
+saveRDS(yssup, file = 'data_prep/prepped/yssup.RDS')
 

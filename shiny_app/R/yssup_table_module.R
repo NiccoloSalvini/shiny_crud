@@ -32,7 +32,7 @@ yssup_table_module_ui <- function(id) {
     fluidRow(
       column(
         width = 12,
-        title = "Motor Trend Car Road Tests",
+        title = "yssup test",
         DTOutput(ns('yssup_table')) %>%
           withSpinner(),
         tags$br(),
