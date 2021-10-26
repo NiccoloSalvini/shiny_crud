@@ -2,6 +2,22 @@ function(input, output, session) {
 
   # Use session$userData to store user data that will be needed throughout
   # the Shiny application
+  f <- FirebaseUI$
+    new()$ 
+    set_providers( 
+      email = TRUE, 
+      google = TRUE
+    )$
+    launch() 
+  
+  # f <- FirebaseEmailPassword$new()
+  
+  # callModule(
+  #   yssup_register_module,
+  #   ""
+  #   
+  # )
+  
   session$userData$email <- 'niccolo.salvini27@gmail.com'
   print(getwd())
 

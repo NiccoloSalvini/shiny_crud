@@ -1,5 +1,6 @@
 # Library in packages used in this application
 library(shiny, quietly = T, warn.conflicts = F)
+library(firebase, quietly = T, warn.conflicts = F)
 library(DT, quietly = T, warn.conflicts = F)
 library(DBI, quietly = T, warn.conflicts = F)
 library(RSQLite, quietly = T, warn.conflicts = F)

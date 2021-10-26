@@ -131,23 +131,20 @@ yssup_edit_module <- function(input, output, session, modal_title, yssup_to_edit
 
     # Observe event for "Model" text input in Add/Edit yssup
     # `shinyFeedback`
-    observeEvent(input$model, {
+    observeEvent(input$tipette, {
       if (input$model == "") {
         shinyFeedback::showFeedbackDanger(
-          "model",
-          text = "Must enter what you have donee!"
+          "tipette",
+          text = "Must at least specify a yssup!"
         )
         shinyjs::disable('submit')
       } else {
-        shinyFeedback::hideFeedback("model")
+        shinyFeedback::hideFeedback("tipette")
         shinyjs::enable('submit')
       }
     })
 
   })
-
-
-
 
 
   edit_yssup_dat <- reactive({

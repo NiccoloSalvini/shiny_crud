@@ -65,6 +65,7 @@ yssup_table_module <- function(input, output, session) {
 
   # Read in "yssup" table from the database
   yssup <- reactive({
+    
     session$userData$yssup_trigger()
 
     out <- NULL
