@@ -1,6 +1,4 @@
 
-
-
 function yssup_table_module_js(ns_prefix) {
 
   $("#" + ns_prefix + "yssup_table").on("click", ".delete_btn", function() {
@@ -13,4 +11,3 @@ function yssup_table_module_js(ns_prefix) {
     $(this).tooltip('hide');
   });
 }
-

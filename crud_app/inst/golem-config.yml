@@ -1,0 +1,13 @@
+default:
+  golem_name: crud_app
+  golem_version: 0.0.0.9000
+  app_prod: no
+production:
+  app_prod: yes
+  HEROKU_DBNAME: d48t7csiftocvo
+  HEROKU_HOST: ec2-52-19-96-181.eu-west-1.compute.amazonaws.com
+  HEROKU_PORT: '5432'
+  HEROKU_USER: udknpypytovowv
+  HEROKU_PWD: 6c19e250350d95a8f6fbf83c3bd83ce19e701f6be6497c08a0f943c1021c357f
+dev:
+  golem_wd: !expr here::here()

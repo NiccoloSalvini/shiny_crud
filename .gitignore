@@ -2,7 +2,3 @@
 .Rhistory
 .RData
 .Ruserdata
-*.Rproj
-*.Rdata
-logs/
-.Renviron

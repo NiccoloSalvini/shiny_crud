@@ -1,9 +1,0 @@
-default:
-  app_name: "yssup_crud"
-  db:
-    dbname: 'HEROKU_DBNAME'
-    host: 'HEROKU_HOST'
-    port: 'HEROKU_PORT'
-    user: 'HEROKU_USER'
-    password: 'HEROKU_PWD'
-
